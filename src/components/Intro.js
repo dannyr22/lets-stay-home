@@ -1,30 +1,30 @@
 import React from 'react';
 import drink1 from '../img/drink1.jpg';
+import styled from 'styled-components';
+import { IntroStyle, Description, Image, Hide } from '../styles';
 
 const Intro = () => {
   return (
-    <div>
-       <div>
-      <div className="description">
+       <IntroStyle>
+      <Description>
         <div className="title">
-          <div className="hide">
+          <Hide className="hide">
             <h2>We Bring <span>Cocktails</span></h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide className="hide">
             <h2>Straight To Your</h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide className="hide">
             <h2><span>Door</span></h2>
-          </div>
+          </Hide>
         </div>
         <p>To see a list of what we sell then please click the button</p>
         <button>Menu</button>
-      </div>
-      <div className="image">
-       <img src={drink1} alt=""/>
-      </div>
-    </div>
-    </div>
+      </Description>
+      <Image className="image">
+       <img src={drink1} alt="cocktail"/>
+      </Image>
+    </IntroStyle>
   )
 }
 
