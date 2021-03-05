@@ -9,6 +9,10 @@ import { IntroStyle, Description, Image, Hide } from '../styles';
 
 const Products = () => {
   return (
+    <>
+      <Title className="hide">
+            <h2>Our <span>Services</span></h2>
+        </Title>
     <ProductsStyled className="products">
       <Cards>
         <Card>
@@ -43,7 +47,8 @@ const Products = () => {
       <Image className="image">
         <img src={cocktails} alt="cocktails in a row"/>
       </Image>
-    </ProductsStyled>
+      </ProductsStyled>
+      </>
   )
 }
 
@@ -73,5 +78,10 @@ p {
 h3{
   font-size: 1.5rem;
 }
+`
+
+const Title = styled(Hide)` 
+padding-left: 10rem;
+margin-top: 10rem;
 `
 export default Products
