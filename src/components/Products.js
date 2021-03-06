@@ -57,14 +57,13 @@ const ProductsStyled = styled(IntroStyle)`
 `
 
 const Cards = styled(Description)` 
-padding-left: 10rem;
 display: flex;
 flex-wrap: wrap;
 width: 100%;
 justify-content: center;
 `
 const Card = styled.div`
-padding: 0rem 2rem;
+padding: 0rem 1rem;
 img {
   height: 18rem;
   width: 15rem;

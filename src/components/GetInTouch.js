@@ -39,7 +39,7 @@ padding: 5rem 20rem;
 
 input, textarea {
   border: none;
-  width: 150%;
+  width: 30rem;
   outline: none;
   padding: 1rem 2rem;
   margin-top: 1rem;
@@ -57,12 +57,13 @@ input, textarea {
 
 button {
   margin-top: 1rem;
-  width: 150%;
+  width: 30rem;
 }
 
 `
 
 const FormContainer = styled.div` 
 display: flex;
+align-items: center;
 `
 export default GetInTouch
