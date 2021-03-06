@@ -13,12 +13,14 @@ const GetInTouch = () => {
       <ImagePour>
         <img src={cocktailPour} alt="cocktail being poured"/>
       </ImagePour>
-        <Form name="contact v1" method="POST" data-netlify="true" onSubmit="submit">
-          <input type="hidden" name="form-name" value="contact v1"/>
-          <input type="text" placeholder="Name" name="name"/>
-          <input type="email" placeholder="Email Address" name="email"/>
-          <textarea name="request" id="" cols="30" rows="10"></textarea>
-          <button type="submit">Submit</button>
+        <Form>
+          <form name="contact v1" method="POST" data-netlify="true" onSubmit="submit">
+            <input type="hidden" name="form-name" value="contact v1"/>
+            <input type="text" placeholder="Name" name="name"/>
+            <input type="email" placeholder="Email Address" name="email"/>
+            <textarea name="request" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Submit</button>
+          </form>
         </Form>
       </FormContainer>
       
