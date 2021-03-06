@@ -14,7 +14,7 @@ const GetInTouch = () => {
         <img src={cocktailPour} alt="cocktail being poured"/>
       </ImagePour>
    
-          <form name="contact v1" method="POST" data-netlify="true" onSubmit="submit">
+          <form   netlify name="contact v1" method="POST" data-netlify="true" onSubmit="submit">
             <input type="hidden" name="form-name" value="contact v1"/>
             <input type="text" placeholder="Name" name="name"/>
             <input type="email" id="e-mail" placeholder="Email Address" name="email"/>
