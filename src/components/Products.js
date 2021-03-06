@@ -4,8 +4,7 @@ import  apple  from '../img/appleCocktail.jpg';
 import  earlgrey  from '../img/earlgreycocktail.jpg';
 import  kilner  from '../img/Kilner.jpg';
 import flowers from '../img/flowers.jpg';
-import cocktails from '../img/cocktails1.jpg';
-import { IntroStyle, Description, Image, Hide, Title } from '../styles';
+import { IntroStyle, Description, Title } from '../styles';
 
 const Products = () => {
   return (

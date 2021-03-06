@@ -1,6 +1,5 @@
 import React from 'react';
 import drink1 from '../img/drink1.jpg';
-import styled from 'styled-components';
 import { IntroStyle, Description, Image, Hide } from '../styles';
 
 const Intro = () => {

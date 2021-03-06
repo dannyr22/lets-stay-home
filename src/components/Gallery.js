@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Title } from '../styles';
 import styled from 'styled-components';
 import cocktails from '../img/cocktails4.jpg';

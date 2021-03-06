@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IntroStyle, Description, Image, Hide, Title } from '../styles';
+import { Image, Title } from '../styles';
 import cocktailPour  from '../img/cocktail pour.jpg';
 
 const GetInTouch = () => {
