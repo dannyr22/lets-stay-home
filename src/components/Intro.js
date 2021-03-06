@@ -1,6 +1,5 @@
 import React from 'react';
-import drink1 from '../img/drink1.jpg';
-import { IntroStyle, Description, Image, Hide } from '../styles';
+import { IntroStyle, Description, Hide } from '../styles';
 import { motion } from 'framer-motion';
 import { fadeIn, container } from '../animations';
 
