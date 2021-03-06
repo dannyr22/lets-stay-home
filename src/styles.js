@@ -24,6 +24,7 @@ export const Image = styled.div`
    overflow: hidden;
    margin-left: 10rem;
    margin-top: 2rem;
+   border-radius: 2rem;
  }
  @media (max-width: 1300px) {
    img {

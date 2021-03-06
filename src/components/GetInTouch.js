@@ -13,11 +13,11 @@ const GetInTouch = () => {
       <ImagePour>
         <img src={cocktailPour} alt="cocktail being poured"/>
       </ImagePour>
-        <Form>
-          <input type="text" placeholder="Full Name"/>
+        <Form name="contact" method="POST" data-netlify="true">
+          <input type="text" placeholder="Name"/>
           <input type="email" placeholder="Email Address" />
           <textarea name="request" id="" cols="30" rows="10"></textarea>
-          <button>Submit</button>
+          <button type="submit">Submit</button>
         </Form>
       </FormContainer>
       
@@ -29,6 +29,7 @@ const ImagePour = styled(Image)`
 flex: 0;
 img {
   width: 70vh;
+  border-radius: 2rem;
 }
 ;`
 
@@ -46,8 +47,9 @@ input, textarea {
   margin-top: 1rem;
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-  font-size: 1.4rem;
-  background: rgba(255,255,255,0.8);
+  font-size: 1rem;
+  background: rgba(255,255,255);
+  transition: all 0.35s ease-in-out;
   &:focus {
     border: 5px solid rgba(106,194,128,0.7);
     color: #504c4c;

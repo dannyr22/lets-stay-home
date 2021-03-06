@@ -28,9 +28,11 @@ const WhatWeDo = () => {
 export default WhatWeDo
 
 const ParallaxContent = styled.div` 
-font-weight: 700;
+font-weight: 600;
 text-align: center;
 padding: 5rem 5rem;
 text-shadow: 3px 3px 5px black;
-background: rgba(255,255,255,0.1)
+p{
+  color: white;
+}
 `

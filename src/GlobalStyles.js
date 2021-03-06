@@ -21,9 +21,9 @@ body {
 
 button {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   background: transparent;
   border: 3px solid #1d3550;
   background-color: white;
@@ -38,12 +38,13 @@ button {
 
 h2 {
   font-weight: lighter;
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
 }
 h3 {
   color: white;
   font-size: 2.5rem;
+  color: #1d3550;
 }
 h4 {
   font-weight: bold;
@@ -51,9 +52,11 @@ h4 {
 
 p {
   padding: 1.5rem 0rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #eee;
-  line-height: 150%
+  line-height: 150%;
+  color: #1d3550;
+  font-weight: bold;
 }
 
 span {
