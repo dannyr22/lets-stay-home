@@ -35,7 +35,8 @@ img {
 const Form = styled.form` 
 display: flex;
 flex-direction: column;
-padding: 5rem 20rem;
+padding: 5rem 0rem;
+margin-right: 10rem;
 
 input, textarea {
   border: none;
@@ -65,5 +66,6 @@ button {
 const FormContainer = styled.div` 
 display: flex;
 align-items: center;
+justify-content: space-between;
 `
 export default GetInTouch
