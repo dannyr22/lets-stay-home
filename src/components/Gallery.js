@@ -51,8 +51,8 @@ display: flex;
 justify-content: center;
 flex-wrap: wrap;
 img, video {
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   margin: 3rem 3rem;
   object-fit: cover;
   border-radius: 3rem;

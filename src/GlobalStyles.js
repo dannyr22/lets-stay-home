@@ -11,6 +11,12 @@ export const GlobalStyles = createGlobalStyle`
 html{
   display: flex;
   justify-content: center;
+  &::-webkit-scrollbar{
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #0c5c44;
+  }
 }
 
 body {
@@ -63,5 +69,13 @@ span {
   padding: 1.5rem 0rem;
   color: #1d3550;
   font-weight: bold;
+}
+
+a, Link {
+  text-decoration: none;
+  color: #333;
+  &:hover{
+    color: #ceb110;
+  }
 }
 `

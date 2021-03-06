@@ -1,6 +1,7 @@
 import React from 'react';
 import drink1 from '../img/drink1.jpg';
 import { IntroStyle, Description, Image, Hide } from '../styles';
+import { motion } from 'framer-motion';
 
 const Intro = () => {
   return (
@@ -21,7 +22,7 @@ const Intro = () => {
         <button>Menu</button>
       </Description>
       <Image className="image">
-       <img src={drink1} alt="cocktail"/>
+       <motion.img animate={{scale: 1, transition: {duration: 1}}} initial={{scale: 0}} src={drink1} alt="cocktail"/>
       </Image>
     </IntroStyle>
   )
