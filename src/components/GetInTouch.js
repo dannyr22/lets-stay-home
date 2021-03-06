@@ -19,7 +19,7 @@ const GetInTouch = () => {
           <input required type="email" placeholder="Email Address" name="email"/>
           <textarea required name="request" id="" cols="30" rows="10"></textarea>
           <label htmlFor="mailingList">Check this box if you want to be cool and join our mailing list, just one a month we promise.</label>
-          <input type="checkbox" name="mailingList" className="checkbox" required/>
+          <input type="checkbox" name="mailingList" className="checkbox"/>
           <button type="submit">Send</button>
         </Form>
       </FormContainer>
