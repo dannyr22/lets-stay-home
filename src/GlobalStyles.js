@@ -16,7 +16,7 @@ html{
 body {
   background-color: #98e9d1;
   font-family: 'Lato', sans-serif;
-  overflow-X: hidden;
+  width: 100%;
 }
 
 button {
