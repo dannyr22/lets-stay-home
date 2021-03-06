@@ -36,37 +36,37 @@ img {
 }
 ;`
 
-const Form = styled.form` 
-display: flex;
-flex-direction: column;
-padding: 5rem 0rem;
-margin-right: 10rem;
+// const Form = styled.form` 
+// display: flex;
+// flex-direction: column;
+// padding: 5rem 0rem;
+// margin-right: 10rem;
 
-input, textarea {
-  border: none;
-  width: 30rem;
-  outline: none;
-  padding: 1rem 2rem;
-  margin-top: 1rem;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-  font-size: 1rem;
-  background: rgba(255,255,255);
-  transition: all 0.35s ease-in-out;
-  &:focus {
-    border: 5px solid rgba(106,194,128,0.7);
-    color: #504c4c;
-    background: white;
+// input, textarea {
+//   border: none;
+//   width: 30rem;
+//   outline: none;
+//   padding: 1rem 2rem;
+//   margin-top: 1rem;
+//   border-radius: 10px;
+//   box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+//   font-size: 1rem;
+//   background: rgba(255,255,255);
+//   transition: all 0.35s ease-in-out;
+//   &:focus {
+//     border: 5px solid rgba(106,194,128,0.7);
+//     color: #504c4c;
+//     background: white;
 
-  }
-}
+//   }
+// }
 
-button {
-  margin-top: 1rem;
-  width: 30rem;
-}
+// button {
+//   margin-top: 1rem;
+//   width: 30rem;
+// }
 
-`
+// `
 
 const FormContainer = styled.div` 
 display: flex;
