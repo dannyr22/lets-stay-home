@@ -1,12 +1,12 @@
 import React from 'react';
-import cocktails from '../img/cocktails6.jpg';
+import martini from '../img/martini.jpg';
 import { Parallax } from 'react-parallax';
 import styled from 'styled-components';
 
 
 const WhatWeDo = () => {
   return (
-      <Parallax bgImage={cocktails} strength={800}
+      <Parallax bgImage={martini} strength={200}
         renderLayer={percentage => (
           <div
           style={{ position: 'absolute', height: percentage * 700, width: percentage * 500,}}

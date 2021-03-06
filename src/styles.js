@@ -4,15 +4,14 @@ import styled from 'styled-components';
 export const IntroStyle = styled.div`
 min-height: 70vh;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
-padding: 5rem 10rem;
+padding: 5rem 0rem;
 color: white;
+text-align: center;
  `
 
 export const Description = styled.div` 
- flex: 1;
- padding-right: 5rem;
  `
 
 export const Image = styled.div` 

@@ -44,7 +44,7 @@ button {
 
 h2 {
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 4rem;
   color: white;
 }
 h3 {
