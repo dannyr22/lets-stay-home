@@ -23,6 +23,7 @@ export const Image = styled.div`
    object-fit: cover;
    overflow: hidden;
    margin-left: 10rem;
+   margin-top: 2rem;
  }
  @media (max-width: 1300px) {
    img {
@@ -34,4 +35,12 @@ export const Image = styled.div`
 export const Hide = styled.div`
 overflow: hidden;
  `
+export const Title = styled.div` 
+padding-left: 10rem;
+margin-top: 5rem;
+overflow: hidden;
+`
 
+export const FullPageImage = styled.div` 
+
+`

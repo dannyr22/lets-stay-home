@@ -5,14 +5,14 @@ import  earlgrey  from '../img/earlgreycocktail.jpg';
 import  kilner  from '../img/Kilner.jpg';
 import flowers from '../img/flowers.jpg';
 import cocktails from '../img/cocktails1.jpg';
-import { IntroStyle, Description, Image, Hide } from '../styles';
+import { IntroStyle, Description, Image, Hide, Title } from '../styles';
 
 const Products = () => {
   return (
     <>
       <Title className="hide">
             <h2>Our <span>Services</span></h2>
-        </Title>
+      </Title>
     <ProductsStyled className="products">
       <Cards>
         <Card>
@@ -44,9 +44,6 @@ const Products = () => {
           <p>Lorem ipsum dolor sit amet.</p>
         </Card>
       </Cards>
-      <Image className="image">
-        <img src={cocktails} alt="cocktails in a row"/>
-      </Image>
       </ProductsStyled>
       </>
   )
@@ -64,13 +61,16 @@ const Cards = styled(Description)`
 padding-left: 10rem;
 display: flex;
 flex-wrap: wrap;
-max-width: 60rem;
+width: 100%;
+justify-content: center;
 `
 const Card = styled.div`
-padding: 2rem 1rem;
+padding: 0rem 2rem;
 img {
   height: 18rem;
   width: 15rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5)
 }
 p {
   font-size: 1.2rem;
@@ -78,10 +78,5 @@ p {
 h3{
   font-size: 1.5rem;
 }
-`
-
-const Title = styled(Hide)` 
-padding-left: 10rem;
-margin-top: 10rem;
 `
 export default Products

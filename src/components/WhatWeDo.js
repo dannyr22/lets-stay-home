@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const WhatWeDo = () => {
   return (
-      <Parallax bgImage={cocktails} strength={800} blur={5}
+      <Parallax bgImage={cocktails} strength={800}
         renderLayer={percentage => (
           <div
           style={{ position: 'absolute', height: percentage * 700, width: percentage * 500,}}
@@ -32,4 +32,5 @@ font-weight: 700;
 text-align: center;
 padding: 5rem 5rem;
 text-shadow: 3px 3px 5px black;
+background: rgba(255,255,255,0.1)
 `
