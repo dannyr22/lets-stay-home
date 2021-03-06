@@ -13,9 +13,8 @@ const GetInTouch = () => {
       <ImagePour>
         <img src={cocktailPour} alt="cocktail being poured"/>
       </ImagePour>
-        <Form
-          name="contact" action="/contact" method="POST" data-netlify="true" onSubmit="submit">
-          <input type="hidden" name="form-name" value="contact v1"/>
+        <Form name="contact" action="/contact" method="POST" data-netlify="true" onSubmit="submit">
+          <input type="hidden" name="form-name" value="contact"/>
           <input required type="text" placeholder="Name" name="name"/>
           <input required type="email" placeholder="Email Address" name="email"/>
           <textarea required name="request" id="" cols="30" rows="10"></textarea>
