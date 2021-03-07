@@ -59,7 +59,7 @@ ul{
 a {
   text-decoration: none;
   &:hover{
-    color: #ceb110;
+    color: #fff3b0;
   }
 }
  Link {
