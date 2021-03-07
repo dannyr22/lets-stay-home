@@ -19,8 +19,8 @@ const Intro = () => {
           </Hide>
         </motion.div>
         <MainTitle variants={fadeIn}>Let's stay Home</MainTitle>
-        <p>To see a list of what we sell then please click the button</p>
-        <button>Menu</button>
+        <motion.p variants={fadeIn}>To see a list of what we sell then please click the button</motion.p>
+        <motion.button variants={fadeIn}>Menu</motion.button>
       </Description>
     </IntroStyle>
   )
