@@ -1,48 +1,65 @@
 import React from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import  apple  from '../img/appleCocktail.jpg';
 import  earlgrey  from '../img/earlgreycocktail.jpg';
 import  kilner  from '../img/Kilner.jpg';
 import flowers from '../img/flowers.jpg';
-import { IntroStyle, Description, Title } from '../styles';
+import { IntroStyle, Description, Title, Hide } from '../styles';
+import { photoAnim } from '../animations';
+import { useScroll } from '../components/useScroll';
+
+
+
 
 const Products = () => {
+
+  const [element, controls] = useScroll() 
   return (
     <>
       <Title className="hide">
             <h2>Our <span>Services</span></h2>
       </Title>
-    <ProductsStyled className="products">
-      <Cards>
-        <Card>
-          <div className="picture">
-            <img src={apple } alt="apple cocktail" />
-            <h3>Parties</h3>
-          </div>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Card>
-        <Card>
-          <div className="picture">
-            <img src={earlgrey } alt="earl grey cocktail" />
-            <h3>Events</h3>
-          </div>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Card>
-        <Card>
-          <div className="picture">
-            <img src={kilner } alt="cocktails in kilner" />
-            <h3>Zoom Meetings</h3>
-          </div>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Card>
-        <Card>
-          <div className="picture">
-            <img src={ flowers} alt=" cocktail in flower bed" />
-            <h3>Celebration</h3>
-          </div>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </Card>
-      </Cards>
+      <ProductsStyled className="products" ref={element} variants={photoAnim} initial="hidden" animate={controls}>
+        <Cards>
+            <Card >
+            <div className="picture">
+              <Hide>
+                <motion.img  src={apple} alt="apple cocktail" />
+              </Hide>
+                <h3>Parties</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </Card>
+          
+            <Card>
+            <div className="picture">
+              <Hide>
+                <motion.img src={earlgrey} alt="earl grey cocktail" />
+              </Hide>
+                <h3>Events</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet.</p>
+              </Card>
+            <Card>
+            <div className="picture">
+              <Hide>
+                <motion.img src={kilner} alt="cocktails in kilner" />
+              </Hide>
+                <h3>Zoom Meetings</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet.</p>
+              </Card>
+            <Card>
+            <div className="picture">
+              <Hide>
+                <motion.img src={flowers} alt=" cocktail in flower bed" />
+              </Hide>
+                <h3>Celebration</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet.</p>
+              </Card>
+          </Cards>
       </ProductsStyled>
       </>
   )

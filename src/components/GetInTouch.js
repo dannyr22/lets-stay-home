@@ -1,19 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Image, Title } from '../styles';
-import cocktailPour  from '../img/cocktail pour.jpg';
+import cocktailPour from '../img/cocktail pour.jpg';
+import { motion } from 'framer-motion';
+import { fadeInLeft } from '../animations';
+import { fadeInRight } from '../animations';
+import { useScroll } from '../components/useScroll';
 
 const GetInTouch = () => {
+
+  const [element, controls] = useScroll() 
   return (
     <div>
       <Title>
         <h2>Get In <span>Touch</span></h2>
       </Title>
-      <FormContainer>
+      <FormContainer ref={element}>
       <ImagePour>
-        <img src={cocktailPour} alt="cocktail being poured"/>
+        <motion.img variants={fadeInLeft}
+          initial="hidden"
+          animate={controls} src={cocktailPour} alt="cocktail being poured"/>
       </ImagePour>
-        <Form name="contact" action="/contact" method="POST" data-netlify="true" onSubmit="submit">
+        <Form variants={fadeInRight} initial="hidden" animate={controls} name="contact" action="/contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact"/>
           <input required type="text" placeholder="Name" name="name"/>
           <input required type="email" placeholder="Email Address" name="email"/>
@@ -36,11 +44,11 @@ img {
 }
 ;`
 
-const Form = styled.form` 
+const Form = styled(motion.form)` 
 display: flex;
 flex-direction: column;
 padding: 5rem 0rem;
-margin-right: 10rem;
+margin-right: 5rem;
 
 input, textarea {
   border: none;

@@ -46,6 +46,9 @@ h2 {
   font-weight: lighter;
   font-size: 3rem;
   color: #98e9d1;
+  @media (min-width: 1600px) {
+    font-size: 4rem;
+  }
 }
 h3 {
   color: #98e9d1;
@@ -63,6 +66,9 @@ p {
   line-height: 150%;
   color: #1d3550;
   font-weight: bold;
+  @media (min-width: 1600px) {
+    font-size: 2rem;
+  }
 }
 
 span {
