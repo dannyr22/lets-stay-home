@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 
 export const IntroStyle = styled.div`
@@ -41,6 +42,10 @@ margin-top: 5rem;
 overflow: hidden;
 `
 
-export const FullPageImage = styled.div` 
-
+export const MainTitle = styled(motion.div)` 
+font-family: 'Dancing Script', cursive;
+font-size: 7rem;
+padding: 4rem 0rem;
+font-weight: bold;
+color: #1d3550
 `

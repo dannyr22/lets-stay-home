@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animations';
 
 const FreshCocktails = () => {
   return (
-    <div>
+    <motion.div variants ={pageAnimation} initial="hidden" animate="show" exit="exit">
       This is Fresh Cocktails
-    </div>
+    </motion.div>
   )
 }
 

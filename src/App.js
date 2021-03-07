@@ -7,31 +7,35 @@ import Faqs from "./pages/Faqs";
 import Events from "./pages/Events";
 import Reviews from './pages/Reviews';
 import NotFound from './pages/NotFound';
-
+import { AnimatePresence } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 function App() {
+  const location = useLocation()
   return (
     <div className="App">
       <GlobalStyles />
       <Nav />
-      <Switch>
-        <Route exact path="/">
-          <AboutUs/>
-        </Route>
-        <Route  path="/fresh-cocktails">
-          <FreshCocktails/>
-        </Route>
-        <Route path="/faqs">
-          <Faqs />
-        </Route>
-        <Route path="/events">
-          <Events/>
-        </Route>
-        <Route path="/reviews">
-          <Reviews/>
-        </Route>
-        <Route component={NotFound} />
-      </Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch key={location.pathname} location={location}>
+          <Route exact path="/">
+            <AboutUs/>
+          </Route>
+          <Route  path="/fresh-cocktails">
+            <FreshCocktails/>
+          </Route>
+          <Route path="/faqs">
+            <Faqs />
+          </Route>
+          <Route path="/events">
+            <Events/>
+          </Route>
+          <Route path="/reviews">
+            <Reviews/>
+          </Route>
+          <Route component={NotFound} />
+          </Switch>
+        </AnimatePresence>
     </div>
   );
 }
