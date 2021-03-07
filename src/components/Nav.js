@@ -1,20 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import logo from '../img/letsstaylogonoBackground.png';
+import logo from '../img/logo.png';
+import blackLogo from '../img/letsstaylogonoBackground.png';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
+const [scrollTop, setScrollTop] = useState(0);
+
+useEffect(() => {
+  function onScroll() {
+    let currentPosition = window.pageYOffset;
+    setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
+  }
+
+  window.addEventListener("scroll", onScroll);
+}, [scrollTop]);
+
   return (
-    <NavStyle>
+    <NavStyle className={scrollTop > 0 ? 'green' : ''}>
       <Logo>
-      <a href="/"><img src={logo} alt="logo"></img></a>
+      <a href="/"><img src={scrollTop > 0 ? logo : blackLogo} alt="logo"></img></a>
       </Logo>
       <Menu className="menu">
         <ul>
-          <li><Link to="/fresh-cocktails">Fresh Cocktails</Link></li>
-          <li><Link to="/events">Events</Link></li>
-          <li><Link to="/reviews">Reviews</Link></li>
-          <li><Link to="/faqs">FAQ's</Link></li>
+          <li><Link className={scrollTop > 0 ? 'white' : 'greenText'} to="/fresh-cocktails">Fresh Cocktails</Link></li>
+          <li><Link className={scrollTop > 0 ? 'white' : 'greenText'} to="/events">Events</Link></li>
+          <li><Link className={scrollTop > 0 ? 'white' : 'greenText'} to="/reviews">Reviews</Link></li>
+          <li><Link className={scrollTop > 0 ? 'white' : 'greenText'} to="/faqs">FAQ's</Link></li>
         </ul>
       </Menu>
     </NavStyle>
@@ -26,12 +38,12 @@ display: flex;
 justify-content: space-evenly;
 position: sticky;
 top: 0;
-height: 5rem;
-background: rgb(236, 236, 236, 0.75);
-
+height: 6rem;
 align-items: center;
+background: white;
+z-index: 2;
 img{
-  width: 7rem;
+  width: 9rem;
 }
 
 ul{
@@ -44,12 +56,21 @@ ul{
     font-weight: bold;
   }
 }
+a {
+  text-decoration: none;
+  &:hover{
+    color: #ceb110;
+  }
+}
+ Link {
+  list-style: none;
+  color: #98e9d1;
+ }
 `
 const Menu = styled.div` 
 padding-left: 20rem;
 `
-
 const Logo = styled.div` 
-
+padding-left: 20rem;
 `
 export default Nav

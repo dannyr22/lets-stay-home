@@ -75,6 +75,7 @@ p {
 }
 h3{
   font-size: 1.5rem;
+  padding-top: 1rem;
 }
 `
 export default Products

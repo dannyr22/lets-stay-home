@@ -15,12 +15,12 @@ html{
     width: 0.5rem;
   }
   &::-webkit-scrollbar-thumb{
-    background-color: #0c5c44;
+    background-color: #98e9d1;
   }
 }
 
 body {
-  background-color: #98e9d1;
+  background-color: white;
   font-family: 'Lato', sans-serif;
   width: 100%;
 }
@@ -32,23 +32,23 @@ button {
   padding: 0.5rem 1rem;
   background: transparent;
   border: 3px solid #1d3550;
-  background-color: white;
-  color: #75B2A0;
+  background-color: #98e9d1;
+  color: white;
   transition: all 0.5s ease;
   border-radius: 5px;
   &:hover {
-    color: white;
-    background-color: #75b2a0;
+    color: #98e9d1;
+    background-color: white;
   }
 }
 
 h2 {
   font-weight: lighter;
   font-size: 3rem;
-  color: white;
+  color: #98e9d1;
 }
 h3 {
-  color: white;
+  color: #98e9d1;
   font-size: 2.5rem;
   color: #1d3550;
 }
@@ -71,11 +71,15 @@ span {
   font-weight: bold;
 }
 
-a, Link {
-  text-decoration: none;
-  color: #333;
-  &:hover{
-    color: #ceb110;
-  }
+.green {
+  background: rgba(152,233,209);
+}
+
+.white {
+  color: white;
+}
+
+.greenText {
+  color: rgba(152,233,209);
 }
 `
