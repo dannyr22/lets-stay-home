@@ -16,7 +16,6 @@ const AboutUs = () => {
       <WhatWeDo />
       <GetInTouch />
       <Gallery />
-      
     </motion.div>
   )
 }

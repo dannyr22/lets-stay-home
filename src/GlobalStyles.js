@@ -23,7 +23,7 @@ body {
   background-color: white;
   font-family: 'Lato', sans-serif;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 button {
