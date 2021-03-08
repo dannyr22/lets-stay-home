@@ -4,7 +4,6 @@ import { Image, Title } from '../styles';
 import cocktailPour from '../img/cocktail pour.jpg';
 import { motion } from 'framer-motion';
 import { fadeInLeft } from '../animations';
-import { fadeInRight } from '../animations';
 import { useScroll } from '../components/useScroll';
 
 const GetInTouch = () => {
