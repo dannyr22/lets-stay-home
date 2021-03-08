@@ -18,7 +18,7 @@ const Footer = () => {
 
 const FooterContainer = styled.footer` 
 height: 25vh;
-background: #333;
+background: #1d3550;
 margin-top: 20%;
 display: flex;
 justify-content: center;
