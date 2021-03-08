@@ -19,7 +19,8 @@ useEffect(() => {
   return (
     <NavStyle className={scrollTop > 0 ? 'green' : ''}>
       <Logo>
-      <a href="/"><img src={scrollTop > 0 ? logo : blackLogo} alt="logo"></img></a>
+        {/* <a href="/"><img src={scrollTop > 0 ? logo : blackLogo} alt="logo"></img></a> */}
+        <a href="/"><p className={scrollTop > 0 ? 'white' : 'greenText'}>Let's Stay Home</p></a>
       </Logo>
       <Menu className="menu">
         <ul>
@@ -78,6 +79,8 @@ padding-left: 20rem;
 `
 const Logo = styled.div` 
 display: flex;
+font-family: 'Dancing Script', cursive;
+font-weight: bold;
 padding-left: 20rem;
 @media (max-width: 1200px) {
   width: 100%;
