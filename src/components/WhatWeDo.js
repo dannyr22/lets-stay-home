@@ -37,13 +37,16 @@ p, h2 {
   color: white;
 }
 
-overflow: auto;
+@media (max-width: 768px) {
+  overflow: auto;
 &::-webkit-scrollbar{
     width: 0.5rem;
   }
   &::-webkit-scrollbar-thumb{
     background-color: #98e9d1;
   }
+}
+
 
 
 @media (min-width: 1600px) {
