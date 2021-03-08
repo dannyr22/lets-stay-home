@@ -21,7 +21,7 @@ const GetInTouch = () => {
           initial="hidden"
           animate={controls} src={cocktailPour} alt="cocktail being poured"/>
       </ImagePour>
-        <Form variants={fadeInRight} initial="hidden" animate={controls} name="contact" action="/contact" method="POST" data-netlify="true">
+        <Form name="contact" action="/contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact"/>
           <input required type="text" placeholder="Name" name="name"/>
           <input required type="email" placeholder="Email Address" name="email"/>
