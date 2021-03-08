@@ -20,7 +20,7 @@ const BurgerNav = () => {
 const StyledBurger = styled.div`
 width: 2rem;
 height: 2rem;
-position: fixed;
+position: static;
 top: 3.5rem;
 right: 0.5rem;
 display: flex;
