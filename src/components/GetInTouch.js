@@ -117,6 +117,9 @@ justify-content: center;
 @media (max-width: 1200px) {
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  margin-top: 10rem;
+}
 @media (min-width: 1200px) {
   justify-content: space-evenly;
 }
