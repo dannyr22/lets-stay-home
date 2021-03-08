@@ -9,7 +9,6 @@ import event from '../img/eventTable.jpg';
 import jamJars from '../img/jamJars.jpg';
 import zoom from '../img/zoom.jpg';
 import plastics from '../img/plastics.jpg';
-import cocktailVideo from '../img/cocktailVideo.mp4';
 
 
 
@@ -29,7 +28,6 @@ const Gallery = () => {
         <img src={jamJars} alt="cocktails in jam jars"/>
         <img src={plastics} alt="cocktails plastics by a stream"/>
         <img src={zoom} alt="zoom cocktail meeting" />
-        <video src={cocktailVideo}></video>
         </Slideshow>
       </GalleryStyle>
       </>

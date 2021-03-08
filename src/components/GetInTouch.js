@@ -25,7 +25,7 @@ const GetInTouch = () => {
           <input required type="text" placeholder="Name" name="name"/>
           <input required type="email" placeholder="Email Address" name="email"/>
           <textarea required name="request" id="" cols="30" rows="10"></textarea>
-          <label htmlFor="mailingList">Check this box if you want to be cool and join our mailing list, just one a month we promise.</label>
+          <label htmlFor="mailingList">Check this box if you want to be our friend and join our mailing list, just one e-mail a month we promise.</label>
           <input type="checkbox" name="mailingList" className="checkbox"/>
           <button type="submit">Send</button>
         </Form>
@@ -76,6 +76,7 @@ input, textarea, label {
   font-size: 1rem;
   background: rgba(255,255,255);
   transition: all 0.35s ease-in-out;
+  border: 1px solid #333;
   &:focus {
     border: 5px solid rgba(106,194,128,0.7);
     color: #504c4c;

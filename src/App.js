@@ -9,6 +9,7 @@ import Reviews from './pages/Reviews';
 import NotFound from './pages/NotFound';
 import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation()
@@ -35,7 +36,8 @@ function App() {
           </Route>
           <Route component={NotFound} />
           </Switch>
-        </AnimatePresence>
+      </AnimatePresence>
+      <Footer />
     </div>
   );
 }
