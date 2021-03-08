@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import logo from '../img/logo.png';
-import blackLogo from '../img/letsstaylogonoBackground.png';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
@@ -19,7 +17,6 @@ useEffect(() => {
   return (
     <NavStyle className={scrollTop > 0 ? 'green' : ''}>
       <Logo>
-        {/* <a href="/"><img src={scrollTop > 0 ? logo : blackLogo} alt="logo"></img></a> */}
         <a href="/"><p className={scrollTop > 0 ? 'white' : 'greenText'}>Let's Stay Home</p></a>
       </Logo>
       <Menu className="menu">
