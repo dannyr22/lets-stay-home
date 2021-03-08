@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import BurgerNav from './BurgerNav';
+
 
 const Nav = () => {
 const [scrollTop, setScrollTop] = useState(0);
@@ -17,7 +19,7 @@ useEffect(() => {
   return (
     <NavStyle className={scrollTop > 0 ? 'green' : ''}>
       <Logo>
-        <a href="/"><p className={scrollTop > 0 ? 'white' : 'greenText'}>Let's Stay Home</p></a>
+        <a href="/"><h3 className={scrollTop > 0 ? 'white' : 'greenText'}>Let's Stay Home</h3></a>
       </Logo>
       <Menu className="menu">
         <ul>
@@ -27,6 +29,7 @@ useEffect(() => {
           <li><Link className={scrollTop > 0 ? 'white' : 'greenText'} to="/faqs">FAQ's</Link></li>
         </ul>
       </Menu>
+      <BurgerNav />
     </NavStyle>
   )
 }
@@ -78,12 +81,19 @@ const Logo = styled.div`
 display: flex;
 font-family: 'Dancing Script', cursive;
 font-weight: bold;
-padding-left: 20rem;
+text-align: center;
+h3{
+  font-size: 3rem;
+}
+
 @media (max-width: 1200px) {
   width: 100%;
   justify-content: center;
   padding: 2rem 0rem;
   margin-top: 3rem;
+  h3 {
+    font-size: 2rem;
+  }
 }
 `
 export default Nav

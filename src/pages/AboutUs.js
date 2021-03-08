@@ -7,6 +7,7 @@ import WhatWeDo from '../components/WhatWeDo';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animations';
 
+
 const AboutUs = () => {
   return (
     <motion.div variants ={pageAnimation} initial="hidden" animate="show" exit="exit">
@@ -15,6 +16,7 @@ const AboutUs = () => {
       <WhatWeDo />
       <GetInTouch />
       <Gallery />
+      
     </motion.div>
   )
 }

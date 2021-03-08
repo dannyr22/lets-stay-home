@@ -38,7 +38,7 @@ overflow: hidden;
  `
 export const Title = styled.div` 
 padding-left: 10rem;
-margin-top: 5rem;
+margin-top: 10rem;
 overflow: hidden;
 @media (max-width: 768px) {
   padding-left: 0rem;

@@ -58,9 +58,10 @@ h2 {
   }
 }
 h3 {
-  color: #98e9d1;
-  font-size: 2.5rem;
-  color: #1d3550;
+  @media (min-width: 1600px) {
+    font-size: 2.5rem;
+  }
+
 }
 h4 {
   font-weight: bold;
@@ -81,7 +82,7 @@ p {
   }
   @media (max-width: 768px) {
     fontsize: 0.5rem;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 1rem;
   }
 }
 
