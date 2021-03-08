@@ -66,11 +66,24 @@ a {
   list-style: none;
   color: #98e9d1;
  }
+ @media (max-width: 1200px) {
+  position: static;
+}
 `
 const Menu = styled.div` 
 padding-left: 20rem;
+@media (max-width: 1200px) {
+  display: none;
+}
 `
 const Logo = styled.div` 
+display: flex;
 padding-left: 20rem;
+@media (max-width: 1200px) {
+  width: 100%;
+  justify-content: center;
+  padding: 2rem 0rem;
+  margin-top: 3rem;
+}
 `
 export default Nav

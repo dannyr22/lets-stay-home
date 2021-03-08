@@ -37,9 +37,21 @@ p, h2 {
   color: white;
 }
 
+overflow: auto;
+&::-webkit-scrollbar{
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #98e9d1;
+  }
+
+
 @media (min-width: 1600px) {
   height: 60rem;
   padding: 5rem;
   
 }
+@media (max-width: 768px) {
+    padding: 1rem 1rem;
+  }
 `

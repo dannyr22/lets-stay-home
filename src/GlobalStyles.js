@@ -23,6 +23,7 @@ body {
   background-color: white;
   font-family: 'Lato', sans-serif;
   width: 100%;
+  overflow-x: hidden;
 }
 
 button {
@@ -47,7 +48,13 @@ h2 {
   font-size: 3rem;
   color: #98e9d1;
   @media (min-width: 1600px) {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+  @media (max-width: 1200px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 768px) {
+    fontsize: 2rem;
   }
 }
 h3 {
@@ -67,7 +74,14 @@ p {
   color: #1d3550;
   font-weight: bold;
   @media (min-width: 1600px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  @media (max-width: 1200px) {
+    font-size: 1.3rem;
+  }
+  @media (max-width: 768px) {
+    fontsize: 0.5rem;
+    padding: 0.5rem 0rem;
   }
 }
 
@@ -79,6 +93,9 @@ span {
 
 .green {
   background: rgba(152,233,209);
+  @media (max-width: 1200px) {
+    background: white;
+  }
 }
 
 .white {

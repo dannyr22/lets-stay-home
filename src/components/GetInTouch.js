@@ -37,20 +37,36 @@ const GetInTouch = () => {
 }
 
 const ImagePour = styled(Image)` 
-flex: 0;
+display: flex;
 img {
-  width: 70vh;
+  width: 85%;
+  height: 80vh;
+  object-fit: cover;
   border-radius: 2rem;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 70%;
+    margin: 2rem 1rem;
+    justify-content: center;
+  }
 }
-;`
 
+`
 const Form = styled(motion.form)` 
 display: flex;
 flex-direction: column;
 padding: 5rem 0rem;
 margin-right: 5rem;
+@media (max-width: 1200px){
+  margin-right: 0rem;
+}
+@media (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+  }
 
-input, textarea {
+input, textarea, label {
+  display: flex;
   border: none;
   width: 30rem;
   outline: none;
@@ -65,13 +81,19 @@ input, textarea {
     border: 5px solid rgba(106,194,128,0.7);
     color: #504c4c;
     background: white;
-
   }
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+  
 }
 
 button {
   margin-top: 1rem;
   width: 30rem;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
 
 .checkbox{
@@ -81,12 +103,22 @@ button {
 label{
   padding-top: 1.5rem;
   width: 30rem;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
 `
 
 const FormContainer = styled.div` 
 display: flex;
+margin-top: 3rem;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
+@media (max-width: 1200px) {
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  justify-content: space-evenly;
+}
 `
 export default GetInTouch
