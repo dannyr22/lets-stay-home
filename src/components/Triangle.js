@@ -11,5 +11,7 @@ const Triangle = () => {
 const TriangleSvg = styled.svg` 
 position: absolute;
 bottom: -1%;
+left: 0;
+width: 100%;
 `
 export default Triangle
