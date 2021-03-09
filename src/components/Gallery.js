@@ -21,11 +21,11 @@ const Gallery = () => {
   return (
     <>
     <Title>
-    <h2 ref={element}>Gallery</h2>
+    <h2 >Gallery</h2>
   </Title>
     <GalleryStyle className="gallery" variants={fadeUp} initial="hidden"
           animate={controls}>
-      <Slideshow>
+      <Slideshow ref={element}>
         <img src={cocktails} alt="cocktails"/>
         <img src={espresso} alt="espresso"/>
         <img src={rums} alt="rums"/>
