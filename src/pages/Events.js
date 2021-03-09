@@ -60,7 +60,7 @@ const Events = () => {
           <p>We work with you to create your bespoke cocktail menu, deliver to you the freshest cocktails ready to serve on tap for your event and provide all the garnishes, glassware and decoration to make a real spectacle.</p>
         </CocktailsOnTap>
         <ImageContainer>
-          <img src={kilner} alt="Events cocktail table" />
+          <img style={{width: }}src={kilner} alt="Events cocktail table" />
         </ImageContainer>
         </EventsInformation>
     </motion.div>
@@ -136,7 +136,7 @@ img {
   border-radius: 10px;
   width: 60%;
   @media (max-width: 768px) {
-    width: 90%;
+    width: 75%;
   }
 }
 `
