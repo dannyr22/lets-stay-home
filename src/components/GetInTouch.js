@@ -37,13 +37,14 @@ const GetInTouch = () => {
 
 const ImagePour = styled(Image)` 
 display: flex;
+justify-content: center;
 img {
-  width: 85%;
-  height: 80vh;
+  width: 65%;
+  height: 70vh;
   object-fit: cover;
   border-radius: 2rem;
-  @media (max-width: 768px) {
-    width: 100%;
+  @media (max-width: 600px) {
+    width: 90%;
     height: 70%;
     margin: 2rem 1rem;
     justify-content: center;
