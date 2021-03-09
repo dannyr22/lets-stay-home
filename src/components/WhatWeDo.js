@@ -1,12 +1,12 @@
 import React from 'react';
-import martini from '../img/martini.jpg';
+import negroni from '../img/negroni.jpg'
 import { Parallax } from 'react-parallax';
 import styled from 'styled-components';
 
 
 const WhatWeDo = () => {
   return (
-      <Parallax bgImage={martini} strength={200} bgImageStyle={{opacity: 0.85}}
+      <Parallax bgImage={negroni} strength={200} bgImageStyle={{opacity: 0.85}}
         renderLayer={percentage => (
           <div
           style={{ position: 'absolute', height: percentage * 700, width: percentage * 500}}
