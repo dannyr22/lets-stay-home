@@ -18,7 +18,7 @@ const RightNav = ({open}) => {
 
 const UlContainer = styled.div`
 z-index: 10;
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   display: none;
 } `
 const Ul = styled.ul`
@@ -34,7 +34,7 @@ li{
   padding-left: 10rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   flex-flow: column nowrap;
   /* flex-direction: column; */
   text-align: center;
