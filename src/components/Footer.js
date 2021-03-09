@@ -30,7 +30,7 @@ align-items: center;
     color: white;
     font-size: 1rem;
     margin: 0rem 0rem;
-
+padding: 0rem 0rem;
   }
 }
 `
