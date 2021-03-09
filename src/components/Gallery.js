@@ -23,7 +23,7 @@ const Gallery = () => {
     <Title>
     <h2 >Gallery</h2>
       </Title>
-      <div ref={element}>
+      <div ref={element}></div>
     <GalleryStyle className="gallery" variants={fadeUp} initial="hidden" animate={controls}>
       <Slideshow >
         <img src={cocktails} alt="cocktails"/>
@@ -36,7 +36,7 @@ const Gallery = () => {
         <img src={zoom} alt="zoom cocktail meeting" />
         </Slideshow>
         </GalleryStyle>
-        </div>
+        
       </>
   )
 }
