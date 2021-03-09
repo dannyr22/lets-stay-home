@@ -29,7 +29,6 @@ align-items: center;
   p{
     color: white;
     font-size: 1rem;
-    padding: 1rem 3rem;
     margin: 0rem 0rem;
 
   }
