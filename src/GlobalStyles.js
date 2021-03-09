@@ -45,22 +45,26 @@ button {
 
 h2 {
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #98e9d1;
   @media (min-width: 1600px) {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
   @media (max-width: 1200px) {
     font-size: 2.5rem;
   }
   @media (max-width: 768px) {
-    fontsize: 2rem;
+    fontsize: 1rem;
   }
 }
 h3 {
+  font-size: 2.5rem;
   @media (min-width: 1600px) {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
+  @media (max-width: 1200px) {
+ font-size: 2rem;
+}
 
 }
 h4 {
@@ -75,7 +79,7 @@ p {
   color: #1d3550;
   font-weight: bold;
   @media (min-width: 1600px) {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   @media (max-width: 1200px) {
     font-size: 1.3rem;

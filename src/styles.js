@@ -53,3 +53,11 @@ padding: 4rem 0rem;
 font-weight: bold;
 color: #1d3550
 `
+export const Review = styled.div`
+  margin: 2rem 2rem;
+
+`
+
+export const FaqSegment = styled.div` 
+padding: 3rem 1rem;
+`

@@ -17,6 +17,7 @@ const RightNav = ({open}) => {
 }
 
 const UlContainer = styled.div`
+z-index: 10;
 @media (min-width: 768px) {
   display: none;
 } `

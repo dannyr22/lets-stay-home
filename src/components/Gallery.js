@@ -9,16 +9,22 @@ import event from '../img/eventTable.jpg';
 import jamJars from '../img/jamJars.jpg';
 import zoom from '../img/zoom.jpg';
 import plastics from '../img/plastics.jpg';
+import { motion } from 'framer-motion';
+import { fadeUp } from '../animations';
+import { useScroll } from '../components/useScroll';
 
 
 
 const Gallery = () => {
+
+  const [element, controls] = useScroll() 
   return (
     <>
     <Title>
-    <h2>Gallery</h2>
+    <h2 ref={element}>Gallery</h2>
   </Title>
-    <GalleryStyle className="gallery">
+    <GalleryStyle className="gallery" variants={fadeUp} initial="hidden"
+          animate={controls}>
       <Slideshow>
         <img src={cocktails} alt="cocktails"/>
         <img src={espresso} alt="espresso"/>
@@ -35,7 +41,7 @@ const Gallery = () => {
 }
 
 
-const GalleryStyle = styled.div`
+const GalleryStyle = styled(motion.div)`
 display: flex;
 margin: 2rem 10rem;
 justify-content: center;

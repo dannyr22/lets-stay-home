@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Image, Title } from '../styles';
 import cocktailPour from '../img/cocktail pour.jpg';
 import { motion } from 'framer-motion';
-import { fadeInLeft } from '../animations';
+import { fadeUp } from '../animations';
 import { useScroll } from '../components/useScroll';
 
 const GetInTouch = () => {
@@ -16,7 +16,7 @@ const GetInTouch = () => {
       </Title>
       <FormContainer ref={element}>
       <ImagePour>
-        <motion.img variants={fadeInLeft}
+        <motion.img variants={fadeUp}
           initial="hidden"
           animate={controls} src={cocktailPour} alt="cocktail being poured"/>
       </ImagePour>

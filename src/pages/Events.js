@@ -3,18 +3,24 @@ import { motion } from 'framer-motion';
 import { pageAnimation } from '../animations';
 import styled from 'styled-components';
 import { Title } from '../styles';
-import eventTable from '../img/eventTable.jpg';
+import eventTable from '../img/event.jpg';
 import cocktails from '../img/cocktails1.jpg'
 import kilner from '../img/Kilner.jpg';
+import christmas from '../img/christmas.jpg';
+import zoom from '../img/zoom.jpg';
+import dogParty from '../img/dog-party.jpg';
 
 const Events = () => {
   return (
     <motion.div variants ={pageAnimation} initial="hidden" animate="show" exit="exit">
       <EventStyle>
-        <Title>
+        <EventTitle>
           <h2><span>Got a wedding, birthday party or special day coming up?</span></h2>
-          <h2 style={{textAlign: "end", marginTop: "2rem"}}>Have no fear, we provide top-notch catering services</h2>
-        </Title>
+          <h2>Have no fear, we provide top-notch catering services</h2>
+        </EventTitle>
+        <ImageHeader>
+          <img src={dogParty} alt="dog's with cake"/>
+        </ImageHeader>
         </EventStyle>
         <EventsInformation>
           <h3>Events</h3>
@@ -24,6 +30,12 @@ const Events = () => {
         <p>Below are examples of our previous work to show you the range we offer. Get in contact today for more information. Letsstayhome75@gmail.com</p>
         <ImageContainer>
           <img src={eventTable} alt="Events cocktail table" />
+        </ImageContainer>
+        <ImageContainer>
+          <img src={christmas} alt="christmas event" />
+        </ImageContainer>
+        <ImageContainer>
+          <img src={zoom} alt="zoom event" />
         </ImageContainer>
         <CocktailMasterclasses>
           <h3>Cocktail Masterclasses</h3>
@@ -56,16 +68,65 @@ const Events = () => {
 }
 
 const EventStyle = styled.div`
-padding: 2rem 5rem;
+padding: 2rem 3rem;
 position: relative;
 min-height: 50vh;
-display: flex;
 justify-content: center;
+@media (max-width: 768px) {
+  padding: 1rem 0.5rem;
+}
  `
 
 const EventsInformation = styled.div` 
 padding: 2rem 3rem;
+@media (max-width: 1200px) {
+  padding: 1rem 1rem;
+}
 `
+const EventTitle = styled(Title)` 
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 0rem 2rem;
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  padding: 1rem 0.5rem;
+}
+
+@media (max-width: 850px) {
+  position: relative;
+  display: block;
+  margin-bottom: 3rem;
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+`
+
+const ImageHeader = styled.div` 
+display: flex;
+margin-top: 3rem;
+width: 100%;
+justify-content: center;
+img {
+  width: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+`
+
 const ImageContainer = styled.div` 
 width: 100%;
 display: flex;
@@ -74,19 +135,31 @@ justify-content: center;
 img {
   border-radius: 10px;
   width: 60%;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 }
 `
 const CocktailMasterclasses = styled.div`
 padding: 5rem 3rem;
 text-align: end;
+@media (max-width: 1200px) {
+  padding: 1rem 1rem;
+}
 `
 
 const BartendersForHire = styled.div`
 padding: 5rem 3rem;
+@media (max-width: 1200px) {
+  padding: 1rem 1rem;
+}
  `
 
 const CocktailsOnTap = styled.div`
 padding: 5rem 3rem;
 text-align: end;
+@media (max-width: 1200px) {
+  padding: 1rem 1rem;
+}
 ` 
 export default Events
