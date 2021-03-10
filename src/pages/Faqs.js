@@ -95,7 +95,8 @@ const FaqsHeader = styled.div`
 `
 
 const FaqsTitle = styled(Title)` 
-padding-left: 2rem;
+padding-left: 1rem;
+padding-right: 1rem;
 text-align: center;
 `
 export default Faqs
