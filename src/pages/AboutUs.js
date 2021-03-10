@@ -6,6 +6,7 @@ import Products from '../components/Products';
 import WhatWeDo from '../components/WhatWeDo';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animations';
+import ScrollTop from '../components/ScrollTop';
 
 
 const AboutUs = () => {
@@ -16,6 +17,7 @@ const AboutUs = () => {
       <WhatWeDo />
       <GetInTouch />
       <Gallery />
+      <ScrollTop />
     </motion.div>
   )
 }

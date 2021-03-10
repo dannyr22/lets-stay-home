@@ -7,6 +7,7 @@ import Triangle from '../components/Triangle';
 import GirlWithFlowers from '../components/GirlWithFlowers';
 import GirlonaScooter from '../components/GirlonaScooter';
 import GirlHoldingMap from '../components/GirlHoldingMap';
+import ScrollTop from '../components/ScrollTop';
 
 const FreshCocktails = () => {
   return (
@@ -38,6 +39,7 @@ const FreshCocktails = () => {
           <GirlHoldingMap />
         </GirlDelivering>
       </Delivering>
+      <ScrollTop />
     </motion.div>
   )
 }

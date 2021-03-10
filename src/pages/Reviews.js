@@ -4,6 +4,7 @@ import { pageAnimation } from '../animations';
 import styled from 'styled-components';
 import { Title, Review } from '../styles';
 import Wave from '../components/Wave';
+import ScrollTop from '../components/ScrollTop';
 
 const Reviews = () => {
   return (
@@ -21,7 +22,8 @@ const Reviews = () => {
         <Review5><p>“We really enjoyed the day very much and the cocktails went down a storm!!” – Rachel</p></Review5>
         <Review6><p>“Thank you so much it was great! Drinks were fantastic, everyone was saying how good there were.” - Hayley</p></Review6>
       <Review7><p>“I have used Let’s Stay Home a couple of times already, what a fabulous idea. The cocktails are superb and so easy to drink. My only regret is that we’re four adults in the household and I had to share” – Sarah</p></Review7>
-      <Review8 style={{textAlign: "right" }}><p >“What an inspired idea to provide us with yummy cocktails and also getting us all in the road to talk to our neighbours (at a social distance). Thank you for your hard work and for raising so much money for the NHS.” – Geof and Denise</p></Review8>
+      <Review8 style={{ textAlign: "right" }}><p >“What an inspired idea to provide us with yummy cocktails and also getting us all in the road to talk to our neighbours (at a social distance). Thank you for your hard work and for raising so much money for the NHS.” – Geof and Denise</p></Review8>
+      <ScrollTop />
     </motion.div>
   )
 }

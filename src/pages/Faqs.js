@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { Title, FaqSegment } from '../styles';
 import { Link } from 'react-router-dom';
 import GirlJumping from '../components/GirlJumping';
+import ScrollTop from '../components/ScrollTop';
 
 const Faqs = () => {
   return (
@@ -67,6 +68,7 @@ const Faqs = () => {
           </FaqSegment>
         </FaqsTitle>
       </FaqsHeader>
+      <ScrollTop />
     </motion.div>
   )
 }

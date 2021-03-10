@@ -9,6 +9,7 @@ import kilner from '../img/Kilner.jpg';
 import christmas from '../img/christmas.jpg';
 import zoom from '../img/zoom.jpg';
 import dogParty from '../img/dog-party.jpg';
+import ScrollTop from '../components/ScrollTop';
 
 const Events = () => {
   return (
@@ -62,7 +63,8 @@ const Events = () => {
         <ImageContainer>
           <img src={kilner} alt="Events cocktail table" />
         </ImageContainer>
-        </EventsInformation>
+      </EventsInformation>
+      <ScrollTop />
     </motion.div>
   )
 }
